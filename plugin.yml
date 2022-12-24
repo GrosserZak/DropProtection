@@ -1,0 +1,10 @@
+name: DropProtection
+main: GrosserZak\DropProtection\Main
+version: 1.0.0
+api: 4.0.0
+author: GrosserZak
+description: Plugin that protects accidental drop
+permissions:
+  dropprotection.command.use:
+    description: "Allows the player to use the drop protection command"
+    default: op

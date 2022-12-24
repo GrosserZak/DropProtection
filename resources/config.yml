@@ -1,0 +1,5 @@
+---
+# Defines for how much time the drop must be protected until everyone else can pick it up
+# NOTE: The duration is defined in seconds and must be less than 300 seconds (5 minutes) because, normally, the item will despawn after 5 minutes
+dropProtectionDuration: 5
+...
