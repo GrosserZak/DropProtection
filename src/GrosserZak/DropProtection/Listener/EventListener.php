@@ -14,7 +14,7 @@ use pocketmine\player\Player;
 class EventListener implements Listener {
 
     public function __construct(
-        private Main $plugin
+        private readonly Main $plugin
     ) {}
 
     public function onDrop(PlayerDropItemEvent $ev) : void {
@@ -26,7 +26,7 @@ class EventListener implements Listener {
         $item->setNamedTag($itemNbt);
     }
 
-    public function onPickup(EntityItemPickupEvent $ev) {
+    public function onPickup(EntityItemPickupEvent $ev) : void {
         $player = $ev->getEntity();
         $itemEntity = $ev->getOrigin();
         if($player instanceof Player and $itemEntity instanceof ItemEntity) {

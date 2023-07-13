@@ -14,7 +14,7 @@ use pocketmine\utils\TextFormat as G;
 class DropProtectionCommand extends Command implements PluginOwned {
 
     public function __construct(
-        private Main $plugin
+        private readonly Main $plugin
     ) {
         parent::__construct("dropprotection", "Drop Protection command", "/dropprotection help", ["dropp"]);
         $this->setPermission("dropprotection.command.use");
